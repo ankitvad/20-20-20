@@ -12,6 +12,7 @@ def sendAlert():
 	#alert = "Take A Break","Please take a Break for 20-Seconds.\nLook Around a Bit.."
 	#alert = pynotify.Notification("Take A Break","Please take a Break for 20-Seconds.\nLook Around a Bit..")
 	#alert.show()
+	subprocess.Popen(['notify-send', "Take A Break","Please take a Break for 20-Seconds.\nLook Around a Bit.."])
 
 while(1):
 	sendAlert()
