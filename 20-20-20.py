@@ -3,18 +3,15 @@ break. Avoid Computer Vision Syndrome.
 ~BY: ankitvad@gmail.com
 V:0.01
 To Do: Add a Screen-Lockout for 20 seconds in Python."""
-#Remove pynotify dependency. Use Ubuntu Subprocess.
+
 import subprocess
 from time import sleep
 
 def sendAlert():
-	#pynotify.init("testing")
 	#alert = "Take A Break","Please take a Break for 20-Seconds.\nLook Around a Bit.."
-	#alert = pynotify.Notification("Take A Break","Please take a Break for 20-Seconds.\nLook Around a Bit..")
-	#alert.show()
 	subprocess.Popen(['notify-send', "Take A Break","Please take a Break for 20-Seconds.\nLook Around a Bit.."])
 
 while(1):
 	sendAlert()
 	#Alert After 20-minutes. 20*60 = 1200. Adding 10 for notification.
-	sleep(1210)
+	sleep(1240)
