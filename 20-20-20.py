@@ -8,7 +8,7 @@ import subprocess
 from time import sleep
 
 def sendAlert():
-	pynotify.init("testing")
+	#pynotify.init("testing")
 	alert = pynotify.Notification("Take A Break","Please take a Break for 20-Seconds.\nLook Around a Bit..")
 	alert.show()
 
