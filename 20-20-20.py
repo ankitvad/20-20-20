@@ -3,7 +3,7 @@ break. Avoid Computer Vision Syndrome.
 ~BY: ankitvad@gmail.com
 V:0.01
 To Do: Add a Screen-Lockout for 20 seconds in Python."""
-
+#Remove pynotify dependency. Use Ubuntu Subprocess.
 import pynotify
 from time import sleep
 
