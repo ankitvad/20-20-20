@@ -14,4 +14,5 @@ def sendAlert():
 while(1):
 	sendAlert()
 	#Alert After 20-minutes. 20*60 = 1200. Adding 10 for notification.
-	sleep(1240)
+	#I think the notification stays up for ~5 seconds so add that just for waiting period. and 20 seconds for looking.
+	sleep(1260)
